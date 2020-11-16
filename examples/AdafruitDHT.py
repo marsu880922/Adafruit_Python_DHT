@@ -21,7 +21,7 @@
 # SOFTWARE.
 import sys
 import http.client as http
-Import urllib
+import urllib
 import json
 import time
 import Adafruit_DHT
