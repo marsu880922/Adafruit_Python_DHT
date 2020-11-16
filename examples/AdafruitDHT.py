@@ -82,9 +82,9 @@ while true:
   if h0 is not None and t0 is not None:
     print('Temp={0:0.1f}* Humidity={1:0.1f}%'.format(t0,h0))
     payload = {"datapoints":[{"dataChnId":"Humidity","values":{"value":h0}},
-		          {"dataChnId":"Temperature","values":{"value":t0}}]} 
-	  post_to_mcs(payload)
-	  time.sleep(10) 
+	      {"dataChnId":"Temperature","values":{"value":t0}}]} 
+    post_to_mcs(payload)
+    time.sleep(10) 
   else:
     print('Failed to get reading. Try again!')
     sys.exit(1)
